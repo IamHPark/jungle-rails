@@ -111,3 +111,11 @@ form.button_to {
 .text-danger {
   color: #f38792 !important;
 }
+
+.logged-in {
+  display: flex;
+  p {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
