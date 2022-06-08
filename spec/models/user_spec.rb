@@ -33,10 +33,13 @@ RSpec.describe User, type: :model do
       user = User.create
       expect(user.errors.full_messages).to include("Email can't be blank")
     end
-
     it "should more than 5 passwords" do
       user = User.new(@attr.merge(:password => "1234"))
       expect(user).not_to be_valid
     end
+  end
+
+  describe '.authenticate_with_credentials' do
+    it ''
   end
 end
